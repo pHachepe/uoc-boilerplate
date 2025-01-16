@@ -1,0 +1,30 @@
+.contact {
+  width: 50%;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 1.75rem;
+    color: $text-color;
+    margin-bottom: 1rem;
+  }
+
+  &__btn {
+    display: block;
+    margin-left: auto;
+    background-color: $text-color;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #fff;
+      color: $text-color;
+    }
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+}

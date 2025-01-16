@@ -1,0 +1,35 @@
+.festival {
+  &__title {
+    font-size: scaleFont(1rem, 1.8);
+    color: $text-color;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  &__img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 1rem;
+    border-radius: 5px;
+
+    @media (max-width: $mqMinWidth) {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

@@ -1,0 +1,9 @@
+// Función 1: Escala una fuente multiplicándola por un factor
+@function scaleFont($size, $factor: 1.2) {
+  @return $size * $factor;
+}
+
+// Función 2: Aclara un color en un porcentaje
+@function lightenColor($color, $pct: 10%) {
+  @return lighten($color, $pct);
+}
