@@ -1,14 +1,14 @@
 .home {
   &__title {
-    color: $text-color;
-    font-size: scaleFont(1rem, 2);
     margin-bottom: 1rem;
+    font-size: scaleFont(1rem, 2);
+    color: $text-color;
   }
 
   &__description {
-    color: lightenColor($text-color, 20%);
-    font-size: scaleFont(1rem, 1.1);
     margin-bottom: 1rem;
+    font-size: scaleFont(1rem, 1.1);
+    color: lightenColor($text-color, 20%);
   }
 
   &__image {

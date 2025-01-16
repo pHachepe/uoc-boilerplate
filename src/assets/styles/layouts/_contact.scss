@@ -3,23 +3,23 @@
   margin: 0 auto;
 
   &__title {
+    margin-bottom: 1rem;
     font-size: 1.75rem;
     color: $text-color;
-    margin-bottom: 1rem;
   }
 
   &__btn {
     display: block;
-    margin-left: auto;
-    background-color: $text-color;
-    color: #fff;
-    border: none;
     padding: 0.5rem 1rem;
+    margin-left: auto;
+    color: #fff;
+    background-color: $text-color;
+    border: none;
     border-radius: 5px;
 
     &:hover {
-      background-color: #fff;
       color: $text-color;
+      background-color: #fff;
     }
   }
 
