@@ -16,11 +16,6 @@ $font-family-sans-serif: (
 
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-$bg-color: #1a1f2b;
-$text-color: #f2f2f2;
-$primary-color: #0dcaf0;
-$accent-color: #ff2e63;
-
 @use "npm:sass-mq/mq" with (
   $breakpoints: (
     mobile: 420px,
