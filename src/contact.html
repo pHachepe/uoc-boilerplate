@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <title>Contacto - Jornadas de Seguridad</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+
+    <main class="contact-page container-padding">
+      <header class="contact-page__header">
+        <h1 class="contact-page__title">Formulario de Contacto</h1>
+        <p class="contact-page__subtitle">
+          Envíanos tus inquietudes y te responderemos a la brevedad.
+        </p>
+      </header>
+
+      <section class="contact-page__methods mb-4">
+        <h2 class="mb-3 text-center">Métodos de Contacto</h2>
+        <ul class="list-group mx-auto" style="max-width: 400px">
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            Teléfono
+            <span class="badge bg-primary rounded-pill">+34 123 456 789</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            Correo
+            <span class="badge bg-secondary rounded-pill">
+              seguridad&commat;uoc.edu
+            </span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center"
+          >
+            Oficina
+            <span class="badge bg-success rounded-pill">Madrid, España</span>
+          </li>
+        </ul>
+      </section>
+
+      <section
+        class="contact-page__form card shadow-sm mx-auto"
+        style="max-width: 600px"
+      >
+        <div class="card-body">
+          <h2 class="card-title">Envíanos tu mensaje</h2>
+          <p class="card-text">
+            Completa los campos. Algunos son obligatorios para dar seguimiento a
+            tu solicitud.
+          </p>
+          <form
+            name="contact"
+            netlify
+            class="row g-3 needs-validation"
+            name="contact"
+            method="POST"
+          >
+            <div class="col-12 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Tu nombre"
+                required
+              />
+              <label for="name">Nombre</label>
+              <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+            </div>
+
+            <div class="col-12 form-floating">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="tu@correo.com"
+                required
+              />
+              <label for="email">Correo electrónico</label>
+              <div class="invalid-feedback">Ingresa un correo válido.</div>
+            </div>
+
+            <div class="col-12 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="subject"
+                name="subject"
+                placeholder="Asunto de tu mensaje"
+              />
+              <label for="subject">Asunto</label>
+            </div>
+
+            <div class="col-12">
+              <p class="mb-1">Tipo de Consulta:</p>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="tipoConsulta"
+                  id="consulta1"
+                  value="General"
+                  required
+                />
+                <label class="form-check-label" for="consulta1">
+                  General
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="tipoConsulta"
+                  id="consulta2"
+                  value="Incidencia"
+                  required
+                />
+                <label class="form-check-label" for="consulta2">
+                  Incidencia
+                </label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="newsletter"
+                name="newsletter"
+              />
+              <label class="form-check-label" for="newsletter">
+                Deseo recibir boletín de noticias
+              </label>
+            </div>
+
+            <div class="col-12 form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Escribe tu mensaje aquí..."
+                id="message"
+                name="message"
+                style="height: 120px"
+                required
+              ></textarea>
+              <label for="message">Mensaje</label>
+              <div class="invalid-feedback">Escribe un mensaje, por favor.</div>
+            </div>
+
+            <div class="col-12 text-center mt-3">
+              <button
+                type="submit"
+                class="btn btn-primary px-4"
+                id="sendBtn"
+                onclick="showToast()"
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <include src="./views/footer.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>

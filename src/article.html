@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+    <title>Artículo - Jornadas de Seguridad</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+
+    <main class="article-page container-padding">
+      <header class="article-header">
+        <h1 class="article-header__title fade-in-up">
+          El Futuro de la Ciberseguridad
+        </h1>
+        <p class="article-header__subtitle fade-in-up">
+          Tendencias y desafíos a partir de 2025
+        </p>
+      </header>
+
+      <article class="article-body" id="main-article">
+        <p>
+          La ciberseguridad se ha convertido en uno de los pilares fundamentales
+          de cualquier organización moderna. Con la creciente digitalización de
+          los procesos, proteger datos y sistemas es un imperativo ineludible.
+        </p>
+
+        <p>
+          Estudios recientes revelan que cada vez son más frecuentes los ataques
+          de tipo ransomware y phishing, afectando tanto a grandes empresas como
+          a particulares. Este escenario exige nuevas medidas y estrategias para
+          mitigar riesgos.
+        </p>
+
+        <figure class="article-figure fade-in-up">
+          <picture>
+            <source
+              srcset="
+                ./assets/images/security-data.jpg?as=avif&width=600,
+                ./assets/images/security-data.jpg?as=avif&width=1200 2x
+              "
+              type="image/avif"
+            />
+            <img
+              src="./assets/images/security-data.jpg"
+              alt="Hacker rompiendo la seguridad de los datos"
+            />
+          </picture>
+          <figcaption>Hacker rompiendo la seguridad de los datos</figcaption>
+        </figure>
+
+        <p>
+          Numerosas empresas están adoptando soluciones basadas en inteligencia
+          artificial para detectar patrones sospechosos antes de que se
+          conviertan en amenazas reales. Sin embargo, la tecnología por sí sola
+          no basta: la capacitación y la concienciación del personal siguen
+          siendo clave.
+        </p>
+
+        <blockquote>
+          “La formación continua en ciberseguridad es la mejor inversión para
+          garantizar la resiliencia de cualquier entorno digital.”
+          <cite>— Andrea López, Experta en Seguridad Informática</cite>
+        </blockquote>
+
+        <figure class="article-figure fade-in-up">
+          <picture>
+            <source
+              srcset="
+                ./assets/images/team.jpg?as=avif&width=600,
+                ./assets/images/team.jpg?as=avif&width=1200 2x
+              "
+              type="image/avif"
+            />
+            <img
+              src="./assets/images/team.jpg"
+              alt="Equipo de expertos en ciberseguridad"
+            />
+          </picture>
+          <figcaption>
+            Equipo experto evaluando la infraestructura de seguridad
+          </figcaption>
+        </figure>
+
+        <p>
+          En las próximas Jornadas de Seguridad se abordarán temas tan diversos
+          como la seguridad en la nube, el uso de criptografía avanzada y la
+          gobernanza de datos. También se presentarán casos de éxito de
+          compañías que han logrado reducir drásticamente los incidentes
+          cibernéticos.
+        </p>
+
+        <ul class="article-list fade-in-up">
+          <li>Herramientas de Inteligencia Artificial y su eficacia real.</li>
+          <li>Protocolos de seguridad en infraestructuras híbridas.</li>
+          <li>Formación y certificaciones en ciberseguridad.</li>
+          <li>Alianzas estratégicas para la prevención de ataques.</li>
+        </ul>
+      </article>
+
+      <div class="alert alert-warning fade-in-up mt-4" role="alert">
+        <strong>Nota:</strong> No te pierdas la ponencia especial sobre
+        <em>Red Team vs Blue Team</em> el próximo sábado.
+      </div>
+    </main>
+
+    <include src="./views/footer.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
+  </body>
+</html>
