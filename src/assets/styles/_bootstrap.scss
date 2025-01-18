@@ -1,5 +1,28 @@
-$body-bg: $bg-color !default;
-$body-color: $text-color !default;
-$primary: $primary-color !default;
-$navbar-dark-color: $text-color !default;
-$navbar-dark-bg: $bg-color !default;
+@use "sass:color";
+@use "sass:math";
+
+$body-bg: #1c1c2e !default;
+$body-color: #f5f5f5 !default;
+$primary: #ff6f61 !default;
+$secondary: #50b1ff !default;
+$success: #5ac18e !default;
+$info: #17a2b8 !default;
+$warning: #ffc107 !default;
+$danger: #dc3545 !default;
+$light: #f8f9fa !default;
+$dark: #343a40 !default;
+
+$accent-color: #fc5185 !default;
+$gray-100: #e9ecef !default;
+$gray-900: #212529 !default;
+
+$body-font-size: 1rem !default;
+
+$btn-border-radius: 2rem !default;
+$btn-padding-y: 0.6rem !default;
+$btn-padding-x: 1.2rem !default;
+
+$btn-box-shadow: 0 0.15rem 0.3rem rgba($dark, 0.2) !default;
+
+$navbar-dark-bg: $body-bg !default;
+$navbar-dark-color: $body-color !default;
