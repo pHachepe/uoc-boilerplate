@@ -1,21 +1,40 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>Los Monegros</title>
+    <title>Jornadas de Seguridad Informática</title>
   </head>
   <body>
-    <include src="./views/navbar.html"></include>
+    <include src="./views/header.html"></include>
 
-    <include src="./views/home.html"></include>
-    <include src="./views/about.html"></include>
-    <include src="./views/festival.html"></include>
-    <include src="./views/contact.html"></include>
+    <main class="home">
+      <div class="home__poster" id="poster">
+        <div class="home__icon-container">
+          <i class="fa-solid fa-user-secret home__icon-big"></i>
+
+          <i class="fa-solid fa-lock home__icon-bg home__icon--1"></i>
+          <i class="fa-solid fa-shield-halved home__icon-bg home__icon--2"></i>
+          <i class="fa-solid fa-key home__icon-bg home__icon--3"></i>
+        </div>
+
+        <div class="home__intro">
+          <h1 class="home__title">Jornadas de Seguridad Informática</h1>
+          <p class="home__subtitle">Ciberprotege tus datos y tu futuro</p>
+          <p>
+            Participa en charlas con expertos y conoce las últimas tendencias en
+            ciberseguridad.
+          </p>
+          <a href="participants.html" class="btn btn-primary btn-lg">
+            Ver ponentes
+          </a>
+        </div>
+      </div>
+    </main>
 
     <include src="./views/footer.html"></include>
+
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>

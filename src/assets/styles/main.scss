@@ -8,6 +8,7 @@
  */
 
 @import "variables";
+@import "bootstrap";
 @import "partials/functions";
 
 /**
@@ -28,12 +29,8 @@
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
-@import "layouts/home";
-@import "layouts/navbar";
-@import "layouts/about";
-@import "layouts/festival";
-@import "layouts/contact";
 @import "layouts/footer";
+@import "pages/home";
 
 /**
  * Do NOT include anything else in this file!
