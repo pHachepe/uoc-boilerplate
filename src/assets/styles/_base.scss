@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: sans-serif;
   font-size: 16px;
-  color: #333;
-  background-color: $bg-color;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
 }
