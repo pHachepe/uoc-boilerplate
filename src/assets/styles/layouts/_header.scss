@@ -1,7 +1,7 @@
 .navbar {
+  padding: 0.8rem 1.5rem;
   background-color: $navbar-dark-bg;
   box-shadow: 0 2px 4px rgba($dark, 0.2);
-  padding: 0.8rem 1.5rem;
 
   .navbar-brand {
     font-family: $font-family-sans-serif;
@@ -11,8 +11,8 @@
 
   .navbar-nav {
     .nav-link {
-      color: $body-color !important;
       margin-left: 1rem;
+      color: $body-color !important;
       transition: color 0.3s ease;
 
       &:hover,
